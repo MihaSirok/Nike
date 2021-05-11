@@ -1,0 +1,138 @@
+ body {
+	margin: 0px;
+	padding: 0px;
+	background-color:white;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	
+}
+#list{
+	width: 1280px;
+	background-color: #55d6aa;
+	height: 8.33%;
+	padding: 0 auto 0 0;
+	text-align: center;
+}
+#nike{
+	width: 1280px;
+	background-color: white;
+	height:700px;
+	position: absolute;
+	
+}
+	  
+ li{
+	display: inline-block;
+	margin: 0 70px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+
+a{	
+	color: #444;
+	text-decoration: none;
+	
+}
+a:hover{
+	color: white;
+}
+canvas{
+	margin-left:240px;
+	
+}
+#nike2{
+	width: 1280px;
+	
+	height: 700px;
+	position: absolute;
+	
+}
+#nike3{
+	width:900px;
+	height:700px;
+	background-repeat:no-repeat;
+	background-image: url("nike.png");
+	transform: scale(0.6);
+	margin-left:190px;
+}
+#manj{
+	transform: scale(0.7);
+	/*border: 1px solid black;*/
+	position:relative;
+	top: -105px;
+	left:110px;
+}
+
+.spodaj{
+	width:1280px;
+	height:40px;
+	background-color:#55d6aa;
+	text-align: center;
+	margin-top:700px;
+	padding-top: 20px;
+	
+}
+.dodatki{
+	width:1280px;
+	height: 700px;
+	position:relative;
+	
+	position: absolute;
+}
+
+.slike{
+	width:400px;
+	height:400px;
+	background-repeat:no-repeat;
+	background-image: url("Majica.png");
+	margin: 0px auto;
+	
+	position: relative;
+	top: 100px; 
+}
+#Canvas{
+	transform:scale(0.2);
+	margin: 0px auto;
+
+	float:left;
+	float: left;
+	position:relative;
+	top: -475px;
+	left: 240px;
+}
+#svg{
+	transform: scale(0.15);
+	position: relative;
+	left: -40px;
+	top: -275px;
+}
+#elNike{
+	position:relative;
+	top: 150px;
+	left:150px;
+}
+button{
+	position: relative;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+	border: none;
+	outline:none;
+	font-size: 50px;
+	text-transform:uppercase;
+	cursor: pointer;
+
+}
+.belo{
+	background: white;
+	color:#222;
+}
+.crno{
+	background:#222;
+	color:white;
+}

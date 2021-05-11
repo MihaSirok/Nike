@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="stile.css">
+  </head>
+  <body>
+	<div id="list">
+		<ul>
+			<li><a href="index.html">BEZIER</a></li>
+			<li><a href="svg.html">SVG</a></li>
+			<li><a href="original.html">ORIGINAL</a></li>
+		</ul>
+	</div>
+	
+    <div class="dodatki">
+	
+		<canvas id="myCanvas" width="800" height="600"></canvas>
+	</div>
+	
+    
+	<div class="spodaj">
+	Logo narejen z metodo bezierCurveTo()
+	</div >
+	<div class="dodatki">
+		<div class="slike">
+			<!--<img src="majica.png" alt="majica">-->
+			
+		</div>
+		<canvas id="Canvas" width="800" height="600" onclick></canvas>
+	</div>
+	<div class="spodaj">
+		Majica z Nike logo
+	</div>
+	<div class="dodatki">
+		<canvas id="elNike" width="500" height="300" >
+		
+	</div>
+	<div class="spodaj">
+		Npis nike z metodo quadraticCurveTo()
+	</div>
+	<div class="dodatki">
+		<button id="gumb"class="belo">Mode</button>
+	</div>
+	<div class="spodaj">
+		
+	</div>
+	<script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(243, 204);
+	  context.bezierCurveTo(176,308,181,380,226,403);
+	  context.bezierCurveTo(241,407,248,405,264,403);
+	  context.bezierCurveTo(286,397,650,243,756,195);
+	  context.bezierCurveTo(625,229,428,284,334,303);
+	  context.bezierCurveTo(260,310,234,234,243,204);
+	 // context.bezierCurveTo();
+	 
+	 
+
+      
+
+      // line color
+      context.strokeStyle = 'black';
+      context.stroke();
+	  context.fillStyle='black';
+	  context.fill();
+	  context.closePath();
+    </script>
+	<script>
+      var canvas = document.getElementById('Canvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(243, 204);
+	  context.bezierCurveTo(176,308,181,380,226,403);
+	  context.bezierCurveTo(241,407,248,405,264,403);
+	  context.bezierCurveTo(286,397,650,243,756,195);
+	  context.bezierCurveTo(625,229,428,284,334,303);
+	  context.bezierCurveTo(260,310,234,234,243,204);
+	 // context.bezierCurveTo();
+	 
+	 
+
+	 
+      context.lineWidth = 1;
+
+      // line color
+      context.strokeStyle = 'black';
+      context.stroke();
+	  context.fillStyle='black';
+	  context.fill();
+    </script>
+	<script>
+      var canvas = document.getElementById('elNike');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      
+	  context.quadraticCurveTo(153,88,110,202);
+	  context.quadraticCurveTo(110,202,138,202);
+	  context.quadraticCurveTo(138,202,155,156);
+	  context.quadraticCurveTo(155,156,153,202);
+	  context.quadraticCurveTo(153,202,182,202);
+	  context.quadraticCurveTo(182,202,225,88);
+	  context.quadraticCurveTo(225,88,197,88);
+	  context.quadraticCurveTo(197,88,179,136);
+	  context.quadraticCurveTo(179,136,182,88);
+	  context.quadraticCurveTo(182,88,153,88);
+	 
+	  context.strokeStyle = 'black';
+      context.stroke();
+	  context.fillStyle='black';
+	  context.fill();	
+	  context.closePath();
+	  
+	  context.beginPath();
+	  
+	   context.quadraticCurveTo(228,88,185,202);
+	   context.quadraticCurveTo(185,202,213,202);
+	   context.quadraticCurveTo(213,202,254,88);
+	   context.quadraticCurveTo(254,88,228,88);
+	   
+	  context.strokeStyle = 'black';
+      context.stroke();
+	  context.fillStyle='black';
+	  context.fill();	
+	  context.closePath();
+	  
+	  context.beginPath();
+	  
+	  context.quadraticCurveTo(259,88,218,202);
+	  context.quadraticCurveTo(218,202,244,202);
+	  context.quadraticCurveTo(244,202,262,157);
+	  context.quadraticCurveTo(262,157,264,202);
+	  context.quadraticCurveTo(264,202,290,202);
+	  context.quadraticCurveTo(290,202,289,135);
+	  context.quadraticCurveTo(289,135,328,88);
+	  context.quadraticCurveTo(328,88,302,88);
+	  context.quadraticCurveTo(302,88,273,120);
+	  context.quadraticCurveTo(273,120,286,88);
+	  context.quadraticCurveTo(286,88,259,88);
+	  
+	  context.strokeStyle = 'black';
+      context.stroke();
+	  context.fillStyle='black';
+	  context.fill();	
+	  context.closePath();
+	  
+	  context.beginPath();
+	  
+	  context.quadraticCurveTo(290,202,346,202);
+	  context.quadraticCurveTo(346,202,354,181);
+	  context.quadraticCurveTo(354,181,323,181);
+	  context.quadraticCurveTo(323,181,333,153);
+	  context.quadraticCurveTo(333,153,359,153);
+	  context.quadraticCurveTo(359,153,367,132);
+	  context.quadraticCurveTo(367,132,341,132);
+	  context.quadraticCurveTo(341,132,350,107);
+	  context.quadraticCurveTo(350,107,377,107);
+	  context.quadraticCurveTo(377,107,384,88);
+	  context.quadraticCurveTo(384,88,328,88);
+	  context.quadraticCurveTo(328,88,290,202);
+	  
+	 
+	  
+	  context.strokeStyle = 'black';
+      context.stroke();
+	  context.fillStyle = 'black';
+	  context.fill();	
+	  context.closePath();
+	  
+	  
+    </script>
+	
+	<script>
+		var barva= document.getElementById("gumb"); 
+		var color= document.getElementById("myCanvas");
+		var context = color.getContext('2d');
+		barva.onclick=function(){
+		
+		if(context.fillStyle =='white'){
+			context.fillStyle = '#222';
+
+		}
+		
+		if(barva.className=="belo"){
+			barva.className="crno";
+			document.querySelector("body").style.background="#222";
+			
+		}
+		else if(barva.className=="crno"){
+			barva.className="belo";
+			document.querySelector("body").style.background="#fff";
+		}
+		}
+	</script>
+	<script>
+    function App() {
+  
+  
+  
+  var canvas = document.getElementById("myCanvas");
+  this.context = canvas.getContext('2d');
+  document.addEventListener('mousedown', this.onClick.bind(this), false);
+}
+
+	App.prototype.onClick = function(event) {
+  
+   
+   
+  if (event.which === 1) {
+    var color = [];
+    for (var i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    this.fill('rgb(' + color.join(',') + ')');
+  }
+};
+
+App.prototype.fill = function(color) {
+
+  this.context.fillStyle = color;
+  this.context.fill();
+};
+
+
+function run() {
+  new App();
+}
+
+window.onload = run;
+run();
+
+</script>
+  </body>
+</html>      
